@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+    <Grid BackgroundColor="Black" HorizontalOptions="Center">
+        <Grid.ColumnDefinitions >
+            <!-- Define as Colunas -->
+            <ColumnDefinition Width="135" />
+            <ColumnDefinition Width="135"/>
+            <ColumnDefinition Width="135"/>
+            <ColumnDefinition Width="135"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <!-- Define as Linhas -->
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Entry Grid.Column="0" Grid.Row="0" TextColor="White" BackgroundColor="Black" Grid.ColumnSpan="4" x:Name="txt_operacao" FontSize="50"/>
+        <Button Grid.Column="3" Grid.Row="1" Text="×" x:Name="btn_vezes" FontSize="80" TextColor="White" BackgroundColor="#e09900" BorderRadius="100"/>
+        <Button Grid.Column="2" Grid.Row="1" Text="9" x:Name="btn_nove" FontSize="60" TextColor="White" BackgroundColor="#2b2b2b" BorderRadius="100"/>
+        <Button Grid.Column="1" Grid.Row="1" Text="8" x:Name="btn_oito" FontSize="60" TextColor="White" BackgroundColor="#2b2b2b" BorderRadius="100"/>
+        <Button Grid.Column="0" Grid.Row="1" Text="7" x:Name="btn_sete" FontSize="60" TextColor="White" BackgroundColor="#2b2b2b" BorderRadius="100"/>
+        <Button Grid.Column="3" Grid.Row="2" Text="−" x:Name="btn_menos" FontSize="80" TextColor="White" BackgroundColor="#e09900" BorderRadius="100"/>
+        <Button Grid.Column="2" Grid.Row="2" Text="6" x:Name="btn_seis" FontSize="60" TextColor="White" BackgroundColor="#2b2b2b" BorderRadius="100"/>
+        <Button Grid.Column="1" Grid.Row="2" Text="5" x:Name="btn_cinco" FontSize="60" TextColor="White" BackgroundColor="#2b2b2b" BorderRadius="100"/>
+        <Button Grid.Column="0" Grid.Row="2" Text="4" x:Name="btn_quatro" FontSize="60" TextColor="White" BackgroundColor="#2b2b2b" BorderRadius="100"/>
+        <Button Grid.Column="3" Grid.Row="3" Text="+" x:Name="btn_mais" FontSize="80" TextColor="White" BackgroundColor="#e09900" BorderRadius="100"/>
+        <Button Grid.Column="2" Grid.Row="3" Text="3" x:Name="btn_tres" FontSize="60" TextColor="White" BackgroundColor="#2b2b2b" BorderRadius="100"/>
+        <Button Grid.Column="1" Grid.Row="3" Text="2" x:Name="btn_dois" FontSize="60" TextColor="White" BackgroundColor="#2b2b2b" BorderRadius="100"/>
+        <Button Grid.Column="0" Grid.Row="3" Text="1" x:Name="btn_um" FontSize="60" TextColor="White" BackgroundColor="#2b2b2b" BorderRadius="100"/>
+        <Button Grid.Column="3" Grid.Row="4" Text="=" x:Name="btn_igual" FontSize="80" TextColor="White" BackgroundColor="#e09900" BorderRadius="100"/>
+        <Button Grid.Column="2" Grid.Row="4" Text="÷" x:Name="btn_dividir" FontSize="80" TextColor="White" BackgroundColor="#e09900" BorderRadius="100"/>
+        <Button Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Text="0" x:Name="btn_zero" TextColor="White" BackgroundColor="#2b2b2b" FontSize="60" BorderRadius="65"/>
+    </Grid>
+
+</ContentPage>
